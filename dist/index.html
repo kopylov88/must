@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>main</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&family=Montserrat:wght@400;500&display=swap&_v=20230629154640"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230629154640">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <nav class="nav">
+        <button class="burger">
+          <span class="burger__line"></span>
+        </button>
+        <a class="header__logo logo" href="index.html">
+          <img class="logo__img" src="img/header/logo.svg" alt="logo">
+        </a>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="index.html">main</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="furniture.html">furniture</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="about.html">about</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contacts.html">contacts</a>
+          </li>
+        </ul>
+        <div class="user-actions">
+          <form class="form-search">
+            <button class="form-search__btn" type="submit">
+              <img class="form-search__btn-img" src="img/icons/search.svg" alt="search icon">
+            </button>
+            <input class="form-search__input" type="search" placeholder="search">
+            <buton class="form-search__btn--mobile"></buton>
+          </form>
+          <a class="user-actions__cart popup-btn" href="#" data-path="cart">
+            <img class="user-actions__cart-img" src="img/icons/cart.svg" alt="cart icon">
+            <span class="user-actions__cart-number"></span>
+          </a>
+          <a class="user-actions__login popup-btn" href="#" data-path="login">
+            <img class="user-actions__login-img" src="img/icons/user.svg" alt="login icon">
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <h1 class="hero__title swift-up-text">sense of craft</h1>
+            <p class="hero__text swift-up-text">This is the case when elegant minimalism is embodied in comfort and free
+              space</p>
+            <a class="hero__btn btn" href="#">shop now</a>
+          </div>
+        </div>
+      </section>
+      <section class="deal">
+        <div class="container">
+          <div class="deal__inner">
+            <h3 class="deal__title title">DEAL OF THE DAY</h3>
+            <p class="deal__text">
+              30% discount on all furniture
+            </p>
+            <div class="deadline-message">
+              The promotion is over!
+            </div>
+            <div class="deal__clock" data-time="2023-12-25">
+              <div class="deal__clock-item">
+                <span class="deal__days"></span>
+                <div class="deal__clock-text">Days</div>
+              </div>
+              <div class="deal__clock-item">
+                <span class="deal__hours"></span>
+                <div class="deal__clock-text">Hours</div>
+              </div>
+              <div class="deal__clock-item">
+                <span class="deal__minutes"></span>
+                <div class="deal__clock-text">Minutes</div>
+              </div>
+              <div class="deal__clock-item">
+                <span class="deal__seconds"></span>
+                <div class="deal__clock-text">Seconds</div>
+              </div>
+            </div>
+            <a class="deal__link btn" href="#">Shop now</a>
+          </div>
+        </div>
+      </section>
+      <section class="favorites">
+        <div class="container">
+          <h2 class="favorites__title title">FEATURED FAVORITES</h2>
+          <div class="favorites__slider-wrapper">
+            <div class="favorites__slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product" data-id="1">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <picture><source srcset="img/favorites/slider/1.webp" type="image/webp"><img src="img/favorites/slider/1.jpg" alt="product image" loading="lazy"></picture>
+                        <div class="swiper-lazy-preloader"></div>
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Kibo sofa</div>
+                      <div class="product__price">$1.499</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--light-grey"></div>
+                        <div class="product__colors-item product__colors-item--grey"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product" data-id="2">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <picture><source srcset="img/favorites/slider/2.webp" type="image/webp"><img src="img/favorites/slider/2.jpg" alt="product image" loading="lazy"></picture>
+                        <div class="swiper-lazy-preloader"></div>
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Munich modular corner chair</div>
+                      <div class="product__price">$419</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--light-grey"></div>
+                        <div class="product__colors-item product__colors-item--grey"></div>
+                        <div class="product__colors-item product__colors-item--dark"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product" data-id="3">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <picture><source srcset="img/favorites/slider/3.webp" type="image/webp"><img src="img/favorites/slider/3.jpg" alt="product image" loading="lazy"></picture>
+                        <div class="swiper-lazy-preloader"></div>
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Geneva table</div>
+                      <div class="product__price">$899</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--brown"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product" data-id="4">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <picture><source srcset="img/favorites/slider/4.webp" type="image/webp"><img src="img/favorites/slider/4.jpg" alt="product image" loading="lazy"></picture>
+                        <div class="swiper-lazy-preloader"></div>
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Marume dinin chair</div>
+                      <div class="product__price">$309</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--dark"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product" data-id="5">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <picture><source srcset="img/favorites/slider/5.webp" type="image/webp"><img src="img/favorites/slider/5.jpg" alt="product image" loading="lazy"></picture>
+                        <div class="swiper-lazy-preloader"></div>
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Pura sectional sofa</div>
+                      <div class="product__price">$1999</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--light-grey"></div>
+                        <div class="product__colors-item product__colors-item--grey"></div>
+                        <div class="product__colors-item product__colors-item--dark"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product" data-id="3">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <picture><source srcset="img/favorites/slider/3.webp" type="image/webp"><img src="img/favorites/slider/3.jpg" alt="product image" loading="lazy"></picture>
+                        <div class="swiper-lazy-preloader"></div>
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Geneva table</div>
+                      <div class="product__price">$899</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--brown"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="favorites__products">
+            <div class="favorites__products-row">
+              <div class="favorites__products-img">
+                <picture><source srcset="img/favorites/1.webp" type="image/webp"><img src="img/favorites/1.jpg" alt=""></picture>
+              </div>
+              <div class="product" data-id="4">
+                <div class="product__img">
+                  <a href="product.html">
+                    <picture><source srcset="img/favorites/slider/4.webp" type="image/webp"><img src="img/favorites/slider/4.jpg" alt="product image"></picture>
+                  </a>
+                </div>
+                <div class="product__descr">
+                  <div class="product__name">Marume dinin chair</div>
+                  <div class="product__price">$309</div>
+                  <div class="product__colors">
+                    <div class="product__colors-item product__colors-item--dark"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="favorites__products-row favorites__products-row--reverse ">
+              <div class="favorites__products-img">
+                <picture><source srcset="img/favorites/2.webp" type="image/webp"><img src="img/favorites/2.jpg" alt=""></picture>
+              </div>
+              <div class="product" data-id="5">
+                <div class="product__img">
+                  <a href="product.html">
+                    <picture><source srcset="img/favorites/slider/5.webp" type="image/webp"><img src="img/favorites/slider/5.jpg" alt="product image"></picture>
+                  </a>
+                </div>
+                <div class="product__descr">
+                  <div class="product__name">Marume dinin chair</div>
+                  <div class="product__price">$309</div>
+                  <div class="product__colors">
+                    <div class="product__colors-item product__colors-item--light-grey"></div>
+                    <div class="product__colors-item product__colors-item--grey"></div>
+                    <div class="product__colors-item product__colors-item--dark"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__item footer__item--connect">
+        <a class="footer__logo logo" href="index.html">
+          <img class="logo__img" src="img/footer/logo.svg" alt="logo">
+        </a>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            Wayside 3000-road 23
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="mailto:mustfurniture@gmail.com">mustfurniture@gmail.com</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="tel:+1074832839">+107 483 2839</a>
+          </li>
+        </ul>
+        <ul class="footer__socials">
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="#">
+              <img src="img/icons/facebook.svg" alt="facebook">
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="#">
+              <img src="img/icons/twitter.svg" alt="twitter">
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a class="footer__socials-link" href="#">
+              <img src="img/icons/inst.svg" alt="instagram">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <div class="footer__item-head">Explore</div>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">furniture</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">outdoor</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">sale</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <div class="footer__item-head">Help</div>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">FAQ</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">contact us</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">shipping</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">returns</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">payment</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <div class="footer__item-head">Stay in touch</div>
+        <form class="footer__form">
+          <input class="footer__form-input" type="email" placeholder="Your email">
+          <button class="footer__form-btn" type="submit">
+            <img src="img/icons/arrow-left.svg" alt="submit button">
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+    <div class="modals">
+  <div class="modal-overlay">
+    <div class="modal-wrap">
+      <div class="modal login" data-target="login">
+        <form class="popup__form" action="#">
+          <h5 class="popup__form-title">login</h5>
+          <div class="popup__form-item">
+            <input class="popup__form-input popup__form-input--login" type="text" placeholder="Введите логин" />
+          </div>
+          <div class="popup__form-item">
+            <input class="popup__form-input popup__form-input--password" type="password" placeholder="Введите пароль" />
+          </div>
+          <button type="submit" class="modal__btn btn">Войти</button>
+          <button type="button" class="modal__btn--close">
+            <svg width="19px" height="30px" viewBox="0 0 19 30" version="1.1">
+              <g id="surface1">
+                <path style="stroke: none; fill-rule: nonzero; fill: rgb(0%, 0%, 0%); fill-opacity: 1"
+                  d="M 18.441406 8.824219 C 19.183594 8.09375 19.183594 6.902344 18.441406 6.171875 C 17.699219 5.4375 16.496094 5.4375 15.753906 6.171875 L 9.5 12.34375 L 3.242188 6.175781 C 2.5 5.445312 1.292969 5.445312 0.550781 6.175781 C -0.191406 6.90625 -0.191406 8.097656 0.550781 8.828125 L 6.808594 15 L 0.558594 21.175781 C -0.183594 21.90625 -0.183594 23.097656 0.558594 23.828125 C 1.300781 24.5625 2.503906 24.5625 3.246094 23.828125 L 9.5 17.65625 L 15.757812 23.824219 C 16.5 24.554688 17.707031 24.554688 18.449219 23.824219 C 19.191406 23.09375 19.191406 21.902344 18.449219 21.171875 L 12.191406 15 Z M 18.441406 8.824219 " />
+              </g>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="modal cart" data-target="cart">
+        <h2 class="cart__title title">shoping cart</h2>
+        <div class="cart__body">
+          <div class="cart__items">
+            <div class="cart__item">
+              <div class="cart__item-body">
+                <div class="cart__item-img">
+                  <picture><source srcset="img/cart/1.webp" type="image/webp"><img src="img/cart/1.jpg" alt=" cart item image"></picture>
+                </div>
+                <div class="cart__item-descr">
+                  <div class="cart__item-title">Marume dining chair</div>
+                  <div class="cart__item-color">Color: Black</div>
+                </div>
+              </div>
+              <div class="cart__item-qty qty-item">
+                <div class="qty-item__title">Quantity</div>
+                <div class="qty-item__price">
+                  <div class="qty-item__price-number">$309</div>
+                  <div class="qty-item__counter">
+                    <div class="counter">
+                      <input type="text" value="1" class="counter__value" data-price="309">
+                      <button class="counter__btn counter__btn--plus" data-direction="plus"></button>
+                      <button class="counter__btn counter__btn--minus" data-direction="minus"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="qty-item__summ">
+                  <div class="qty-item__summ-title">Subtotal</div>
+                  <div class="qty-item__summ-box">
+                    <div class="qty-item__summ-number"></div>
+                    <button class="qty-item__summ-btn">
+                      <img src="img/icons/pencil.svg" alt="edit button">
+                    </button>
+                    <button class="qty-item__summ-btn qty-item__summ-btn--delete">
+                      <img src="img/icons/trash.svg" alt="trash button">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart__item">
+              <div class="cart__item-body">
+                <div class="cart__item-img">
+                  <picture><source srcset="img/cart/1.webp" type="image/webp"><img src="img/cart/1.jpg" alt=" cart item image"></picture>
+                </div>
+                <div class="cart__item-descr">
+                  <div class="cart__item-title">Marume dining chair</div>
+                  <div class="cart__item-color">Color: Black</div>
+                </div>
+              </div>
+              <div class="cart__item-qty qty-item">
+                <div class="qty-item__title">Quantity</div>
+                <div class="qty-item__price">
+                  <div class="qty-item__price-number">$309</div>
+                  <div class="qty-item__counter">
+                    <div class="counter">
+                      <input type="text" value="1" class="counter__value" data-price="309">
+                      <button class="counter__btn counter__btn--plus" data-direction="plus"></button>
+                      <button class="counter__btn counter__btn--minus" data-direction="minus"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="qty-item__summ">
+                  <div class="qty-item__summ-title">Subtotal</div>
+                  <div class="qty-item__summ-box">
+                    <div class="qty-item__summ-number"></div>
+                    <button class="qty-item__summ-btn">
+                      <img src="img/icons/pencil.svg" alt="edit button">
+                    </button>
+                    <button class="qty-item__summ-btn qty-item__summ-btn--delete">
+                      <img src="img/icons/trash.svg" alt="trash button">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart__item">
+              <div class="cart__item-body">
+                <div class="cart__item-img">
+                  <picture><source srcset="img/cart/1.webp" type="image/webp"><img src="img/cart/1.jpg" alt=" cart item image"></picture>
+                </div>
+                <div class="cart__item-descr">
+                  <div class="cart__item-title">Marume dining chair</div>
+                  <div class="cart__item-color">Color: Black</div>
+                </div>
+              </div>
+              <div class="cart__item-qty qty-item">
+                <div class="qty-item__title">Quantity</div>
+                <div class="qty-item__price">
+                  <div class="qty-item__price-number">$309</div>
+                  <div class="qty-item__counter">
+                    <div class="counter">
+                      <input type="text" value="1" class="counter__value" data-price="309">
+                      <button class="counter__btn counter__btn--plus" data-direction="plus"></button>
+                      <button class="counter__btn counter__btn--minus" data-direction="minus"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="qty-item__summ">
+                  <div class="qty-item__summ-title">Subtotal</div>
+                  <div class="qty-item__summ-box">
+                    <div class="qty-item__summ-number"></div>
+                    <button class="qty-item__summ-btn">
+                      <img src="img/icons/pencil.svg" alt="edit button">
+                    </button>
+                    <button class="qty-item__summ-btn qty-item__summ-btn--delete">
+                      <img src="img/icons/trash.svg" alt="trash button">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="modal__btn--close">
+            <svg width="19px" height="30px" viewBox="0 0 19 30" version="1.1">
+              <g id="surface1">
+                <path style="stroke: none; fill-rule: nonzero; fill: rgb(0%, 0%, 0%); fill-opacity: 1"
+                  d="M 18.441406 8.824219 C 19.183594 8.09375 19.183594 6.902344 18.441406 6.171875 C 17.699219 5.4375 16.496094 5.4375 15.753906 6.171875 L 9.5 12.34375 L 3.242188 6.175781 C 2.5 5.445312 1.292969 5.445312 0.550781 6.175781 C -0.191406 6.90625 -0.191406 8.097656 0.550781 8.828125 L 6.808594 15 L 0.558594 21.175781 C -0.183594 21.90625 -0.183594 23.097656 0.558594 23.828125 C 1.300781 24.5625 2.503906 24.5625 3.246094 23.828125 L 9.5 17.65625 L 15.757812 23.824219 C 16.5 24.554688 17.707031 24.554688 18.449219 23.824219 C 19.191406 23.09375 19.191406 21.902344 18.449219 21.171875 L 12.191406 15 Z M 18.441406 8.824219 " />
+              </g>
+            </svg>
+          </button>
+          <div class="cart__summ">
+            <div class="cart__summ-title">Your order summary</div>
+            <div class="cart__summ-box">
+              <div class="cart__summ-label">Total</div>
+              <div class="cart__summ-value"></div>
+            </div>
+            <button class="cart__summ-btn btn">PROCEED TO CHECKOUT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <script src="js/app.min.js?_v=20230629154640"></script>
+</body>
+
+</html>

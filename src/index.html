@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>main</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&family=Montserrat:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html', {})
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <h1 class="hero__title swift-up-text">sense of craft</h1>
+            <p class="hero__text swift-up-text">This is the case when elegant minimalism is embodied in comfort and free
+              space</p>
+            <a class="hero__btn btn" href="#">shop now</a>
+          </div>
+        </div>
+      </section>
+      <section class="deal">
+        <div class="container">
+          <div class="deal__inner">
+            <h3 class="deal__title title">DEAL OF THE DAY</h3>
+            <p class="deal__text">
+              30% discount on all furniture
+            </p>
+            <div class="deadline-message">
+              The promotion is over!
+            </div>
+            <div class="deal__clock" data-time="2023-12-25">
+              <div class="deal__clock-item">
+                <span class="deal__days"></span>
+                <div class="deal__clock-text">Days</div>
+              </div>
+              <div class="deal__clock-item">
+                <span class="deal__hours"></span>
+                <div class="deal__clock-text">Hours</div>
+              </div>
+              <div class="deal__clock-item">
+                <span class="deal__minutes"></span>
+                <div class="deal__clock-text">Minutes</div>
+              </div>
+              <div class="deal__clock-item">
+                <span class="deal__seconds"></span>
+                <div class="deal__clock-text">Seconds</div>
+              </div>
+            </div>
+            <a class="deal__link btn" href="#">Shop now</a>
+          </div>
+        </div>
+      </section>
+      <section class="favorites">
+        <div class="container">
+          <h2 class="favorites__title title">FEATURED FAVORITES</h2>
+          <div class="favorites__slider-wrapper">
+            <div class="favorites__slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product" data-id="1">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/favorites/slider/1.jpg" alt="product image" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Kibo sofa</div>
+                      <div class="product__price">$1.499</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--light-grey"></div>
+                        <div class="product__colors-item product__colors-item--grey"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product" data-id="2">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/favorites/slider/2.jpg" alt="product image" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Munich modular corner chair</div>
+                      <div class="product__price">$419</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--light-grey"></div>
+                        <div class="product__colors-item product__colors-item--grey"></div>
+                        <div class="product__colors-item product__colors-item--dark"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product" data-id="3">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/favorites/slider/3.jpg" alt="product image" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Geneva table</div>
+                      <div class="product__price">$899</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--brown"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product" data-id="4">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/favorites/slider/4.jpg" alt="product image" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Marume dinin chair</div>
+                      <div class="product__price">$309</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--dark"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product" data-id="5">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/favorites/slider/5.jpg" alt="product image" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Pura sectional sofa</div>
+                      <div class="product__price">$1999</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--light-grey"></div>
+                        <div class="product__colors-item product__colors-item--grey"></div>
+                        <div class="product__colors-item product__colors-item--dark"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product" data-id="3">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/favorites/slider/3.jpg" alt="product image" loading="lazy">
+                        <div class="swiper-lazy-preloader"></div>
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Geneva table</div>
+                      <div class="product__price">$899</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--brown"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="favorites__products">
+            <div class="favorites__products-row">
+              <div class="favorites__products-img">
+                <img src="@img/favorites/1.jpg" alt="">
+              </div>
+              <div class="product" data-id="4">
+                <div class="product__img">
+                  <a href="product.html">
+                    <img src="@img/favorites/slider/4.jpg" alt="product image">
+                  </a>
+                </div>
+                <div class="product__descr">
+                  <div class="product__name">Marume dinin chair</div>
+                  <div class="product__price">$309</div>
+                  <div class="product__colors">
+                    <div class="product__colors-item product__colors-item--dark"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="favorites__products-row favorites__products-row--reverse ">
+              <div class="favorites__products-img">
+                <img src="@img/favorites/2.jpg" alt="">
+              </div>
+              <div class="product" data-id="5">
+                <div class="product__img">
+                  <a href="product.html">
+                    <img src="@img/favorites/slider/5.jpg" alt="product image">
+                  </a>
+                </div>
+                <div class="product__descr">
+                  <div class="product__name">Marume dinin chair</div>
+                  <div class="product__price">$309</div>
+                  <div class="product__colors">
+                    <div class="product__colors-item product__colors-item--light-grey"></div>
+                    <div class="product__colors-item product__colors-item--grey"></div>
+                    <div class="product__colors-item product__colors-item--dark"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html', {})
+    @@include('html/modals.html', {})
+  </div>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

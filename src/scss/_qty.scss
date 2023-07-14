@@ -1,0 +1,27 @@
+.qty {
+  display: flex;
+  justify-content: space-between;
+  width: 202px;
+  border: 1px solid #B6B6B6;
+  height: 70px;
+}
+
+.minus,
+.plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  font-size: 24px;
+}
