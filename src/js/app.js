@@ -414,7 +414,7 @@ swiftUpElements.forEach(elem => {
   elem.innerHTML = words.join(' ');
   const children = document.querySelectorAll('span > i');
   children.forEach((node, index) => {
-    node.style.animationDelay = `${(index + 3) * .1}s`; //Задержка перед началом анимации
+    node.style.animationDelay = `${(index) * .15}s`; //Задержка перед началом анимации
   });
 });
 
