@@ -359,12 +359,6 @@ body.noscroll {
   transition: 0.3s;
 }
 
-.no-touch .btn:hover {
-  background-color: #DDDDDD;
-  color: #303030;
-  outline: 1px solid #303030;
-}
-
 .product {
   display: flex;
   flex-direction: column;
@@ -2522,6 +2516,14 @@ body.noscroll {
 
   .furniture__body-inner {
     gap: 10px;
+  }
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    background-color: #DDDDDD;
+    color: #303030;
+    outline: 1px solid #303030;
   }
 }
 

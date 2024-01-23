@@ -17,77 +17,80 @@
 <body>
   <div class="wrapper">
     @@include('html/header.html', {})
-    <main class="main">
-      <div class="container">
-        <div class="bradcrumbs">
-          <ul class="bradcrumbs__list">
-            <li class="bradcrumbs__item">
-              <a href="index.html" class="bradcrumbs__link">Home</a>
-            </li>
-            <li class="bradcrumbs__item">
-              <span class="bradcrumbs__link">Contacts</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <section class="contacts">
+    <div data-barba="wrapper">
+      <main class="main" data-barba="container" data-barba-namespace="contacts">
         <div class="container">
-          <div class="map" id="map"></div>
-          <div class="contacts__box">
-            <div class="contacts__content">
-              <h3 class="contacts__title title">Feel Free Don’t Hesitate To Contact With Us</h3>
-              <p class="contacts__text">
-                Lorem ipsum dolor sit amet, consectetur adingn elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo maecnaacnrao cumsan
-                lacus vel facilisis.
-              </p>
-              <div class="contacts__items">
-                <div class="contacts__item contacts__item--phone">
-                  <div class="contacts__item-icon">
-                    <img src="img/icons/phone-icon.svg" alt="phone icon">
-                  </div>
-                  <div class="contacts__item-content">
-                    <a class="contacts__item-phone" href="tel:+1074832839">+107 483 2839</a>
-                  </div>
-                </div>
-                <div class="contacts__item contacts__item--adress">
-                  <div class="contacts__item-icon">
-                    <img src="img/icons/location-icon.svg" alt="location icon">
-                  </div>
-                  <div class="contacts__item-content">
-                    <p>Alte Jacob Strasse, 100 Berlin</p>
-                  </div>
-                </div>
-                <div class="contacts__item contacts__item--mail">
-                  <div class="contacts__item-icon">
-                    <img src="img/icons/email-icon.svg" alt="email icon">
-                  </div>
-                  <div class="contacts__item-content">
-                    <a href="mailto:mustfurniture@gmail.com">mustfurniture@gmail.com</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <form class="contacts__form" action="#">
-              <h4 class="contacts__form-title">Contact Form</h4>
-              <div class="contacts__form-item">
-                <input type="text" class="contacts__form-input contacts__form-input--name" placeholder="Your Name">
-              </div>
-              <div class="contacts__form-item">
-                <input type="email" class="contacts__form-input contacts__form-input--email" placeholder="Your E-mail Address">
-              </div>
-              <div class="contacts__form-item contacts__form-item--subject">
-                <input type="text" class="contacts__form-input contacts__form-input--subject" placeholder="Subject">
-              </div>
-              <div class="contacts__form-item contacts__form-item--text">
-                <textarea class="contacts__form-textarea" placeholder="Message here"></textarea>
-              </div>
-              <button class="contacts__form-btn btn" type="submit">SEND MESSAGE</button>
-            </form>
+          <div class="bradcrumbs">
+            <ul class="bradcrumbs__list">
+              <li class="bradcrumbs__item">
+                <a href="index.html" class="bradcrumbs__link">Home</a>
+              </li>
+              <li class="bradcrumbs__item">
+                <span class="bradcrumbs__link">Contacts</span>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-    </main>
+        <section class="contacts">
+          <div class="container">
+            <div class="map" id="map"></div>
+            <div class="contacts__box">
+              <div class="contacts__content">
+                <h3 class="contacts__title title">Feel Free Don’t Hesitate To Contact With Us</h3>
+                <p class="contacts__text">
+                  Lorem ipsum dolor sit amet, consectetur adingn elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo maecnaacnrao cumsan
+                  lacus vel facilisis.
+                </p>
+                <div class="contacts__items">
+                  <div class="contacts__item contacts__item--phone">
+                    <div class="contacts__item-icon">
+                      <img src="img/icons/phone-icon.svg" alt="phone icon">
+                    </div>
+                    <div class="contacts__item-content">
+                      <a class="contacts__item-phone" href="tel:+1074832839">+107 483 2839</a>
+                    </div>
+                  </div>
+                  <div class="contacts__item contacts__item--adress">
+                    <div class="contacts__item-icon">
+                      <img src="img/icons/location-icon.svg" alt="location icon">
+                    </div>
+                    <div class="contacts__item-content">
+                      <p>Alte Jacob Strasse, 100 Berlin</p>
+                    </div>
+                  </div>
+                  <div class="contacts__item contacts__item--mail">
+                    <div class="contacts__item-icon">
+                      <img src="img/icons/email-icon.svg" alt="email icon">
+                    </div>
+                    <div class="contacts__item-content">
+                      <a href="mailto:mustfurniture@gmail.com">mustfurniture@gmail.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <form class="contacts__form" action="#">
+                <h4 class="contacts__form-title">Contact Form</h4>
+                <div class="contacts__form-item">
+                  <input type="text" class="contacts__form-input contacts__form-input--name" placeholder="Your Name">
+                </div>
+                <div class="contacts__form-item">
+                  <input type="email" class="contacts__form-input contacts__form-input--email"
+                    placeholder="Your E-mail Address">
+                </div>
+                <div class="contacts__form-item contacts__form-item--subject">
+                  <input type="text" class="contacts__form-input contacts__form-input--subject" placeholder="Subject">
+                </div>
+                <div class="contacts__form-item contacts__form-item--text">
+                  <textarea class="contacts__form-textarea" placeholder="Message here"></textarea>
+                </div>
+                <button class="contacts__form-btn btn" type="submit">SEND MESSAGE</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
     @@include('html/footer.html', {})
     @@include('html/modals.html', {})
   </div>

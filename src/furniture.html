@@ -17,301 +17,303 @@
 <body>
   <div class="wrapper">
     @@include('html/header.html', {})
-    <main class="main">
-      <div class="container">
-        <div class="bradcrumbs">
-          <ul class="bradcrumbs__list">
-            <li class="bradcrumbs__item">
-              <a href="index.html" class="bradcrumbs__link">Home</a>
-            </li>
-            <li class="bradcrumbs__item">
-              <span class="bradcrumbs__link">Furniture</span>
-            </li>
-          </ul>
-        </div>
-        <section class="furniture">
-          <div class="furniture__head">
-            <h2 class="furniture__title title">FURNITURE</h2>
-            <p class="furniture__text">
-              Welcome, design enthusiasts, to your slice of paradise! Discover our wide selection of furniture for
-              the
-              entire home that combines comfort and style.
-            </p>
+    <div data-barba="wrapper">
+      <main class="main" data-barba="container" data-barba-namespace="furniture">
+        <div class="container">
+          <div class="bradcrumbs">
+            <ul class="bradcrumbs__list">
+              <li class="bradcrumbs__item">
+                <a href="index.html" class="bradcrumbs__link">Home</a>
+              </li>
+              <li class="bradcrumbs__item">
+                <span class="bradcrumbs__link">Furniture</span>
+              </li>
+            </ul>
           </div>
-          <div class="furniture__box">
-            <form class="furniture__filter filter" action="#">
-              <div class="filter__box">
-                <div class="filter__item filter-price">
-                  <div class="filter__item-head open">Price</div>
-                  <div class="filter__item-content">
-                    <div class="filter-price__range"></div>
-                    <div class="filter-price__inputs">
-                      <label class="filter-price__label">
-                        <span class="filter-price__text">from</span>
-                        <input class="filter-price__input" type="number" min="150" max="2000" id="input-0">
-                        <span class="filter-price__text">$</span>
+          <section class="furniture">
+            <div class="furniture__head">
+              <h2 class="furniture__title title">FURNITURE</h2>
+              <p class="furniture__text">
+                Welcome, design enthusiasts, to your slice of paradise! Discover our wide selection of furniture for
+                the
+                entire home that combines comfort and style.
+              </p>
+            </div>
+            <div class="furniture__box">
+              <form class="furniture__filter filter" action="#">
+                <div class="filter__box">
+                  <div class="filter__item filter-price">
+                    <div class="filter__item-head open">Price</div>
+                    <div class="filter__item-content">
+                      <div class="filter-price__range"></div>
+                      <div class="filter-price__inputs">
+                        <label class="filter-price__label">
+                          <span class="filter-price__text">from</span>
+                          <input class="filter-price__input" type="number" min="150" max="2000" id="input-0">
+                          <span class="filter-price__text">$</span>
+                        </label>
+                        <label class="filter-price__label">
+                          <span class="filter-price__text">to</span>
+                          <input class="filter-price__input" type="number" min="150" max="2000" id="input-1">
+                          <span class="filter-price__text">$</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter__item filter-category">
+                    <div class="filter__item-head open">Category</div>
+                    <div class="filter__item-content">
+                      <label class="filter-category__label">
+                        <input class="filter__item-input filter-category__input" type="checkbox">
+                        <span class="filter-category__input-custom">Chair</span>
                       </label>
-                      <label class="filter-price__label">
-                        <span class="filter-price__text">to</span>
-                        <input class="filter-price__input" type="number" min="150" max="2000" id="input-1">
-                        <span class="filter-price__text">$</span>
+                      <label class="filter-category__label">
+                        <input class="filter__item-input filter-category__input" type="checkbox">
+                        <span class="filter-category__input-custom">Table</span>
+                      </label>
+                      <label class="filter-category__label">
+                        <input class="filter__item-input filter-category__input" type="checkbox">
+                        <span class="filter-category__input-custom">Stand</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="filter__item filter-colors">
+                    <div class="filter__item-head open">Colors</div>
+                    <div class="filter__item-content">
+                      <label class="filter-colors__label">
+                        <input class="filter__item-input filter-colors__input" type="checkbox">
+                        <span class="filter-colors__input-custom filter-colors__input-custom--grey"></span>
+                        grey
+                      </label>
+                      <label class="filter-colors__label">
+                        <input class="filter__item-input filter-colors__input" type="checkbox">
+                        <span class="filter-colors__input-custom filter-colors__input-custom--light-grey"></span>
+                        light grey
+                      </label>
+                      <label class="filter-colors__label">
+                        <input class="filter__item-input filter-colors__input" type="checkbox">
+                        <span class="filter-colors__input-custom filter-colors__input-custom--blue"></span>
+                        blue
+                      </label>
+                      <label class="filter-colors__label">
+                        <input class="filter__item-input filter-colors__input" type="checkbox">
+                        <span class="filter-colors__input-custom filter-colors__input-custom--red"></span>
+                        red
+                      </label>
+                      <label class="filter-colors__label">
+                        <input class="filter__item-input filter-colors__input" type="checkbox">
+                        <span class="filter-colors__input-custom filter-colors__input-custom--dark"></span>
+                        dark
+                      </label>
+                      <label class="filter-colors__label">
+                        <input class="filter__item-input filter-colors__input" type="checkbox">
+                        <span class="filter-colors__input-custom filter-colors__input-custom--brown"></span>
+                        brown
                       </label>
                     </div>
                   </div>
                 </div>
-                <div class="filter__item filter-category">
-                  <div class="filter__item-head open">Category</div>
-                  <div class="filter__item-content">
-                    <label class="filter-category__label">
-                      <input class="filter__item-input filter-category__input" type="checkbox">
-                      <span class="filter-category__input-custom">Chair</span>
-                    </label>
-                    <label class="filter-category__label">
-                      <input class="filter__item-input filter-category__input" type="checkbox">
-                      <span class="filter-category__input-custom">Table</span>
-                    </label>
-                    <label class="filter-category__label">
-                      <input class="filter__item-input filter-category__input" type="checkbox">
-                      <span class="filter-category__input-custom">Stand</span>
-                    </label>
-                  </div>
+                <div class="furniture__filter-btns">
+                  <button class="furniture__filter-btn btn" type="submit">apply</button>
+                  <button class="furniture__filter-btn btn furniture__filter-btn--reset" type="reset">reset</button>
                 </div>
-                <div class="filter__item filter-colors">
-                  <div class="filter__item-head open">Colors</div>
-                  <div class="filter__item-content">
-                    <label class="filter-colors__label">
-                      <input class="filter__item-input filter-colors__input" type="checkbox">
-                      <span class="filter-colors__input-custom filter-colors__input-custom--grey"></span>
-                      grey
-                    </label>
-                    <label class="filter-colors__label">
-                      <input class="filter__item-input filter-colors__input" type="checkbox">
-                      <span class="filter-colors__input-custom filter-colors__input-custom--light-grey"></span>
-                      light grey
-                    </label>
-                    <label class="filter-colors__label">
-                      <input class="filter__item-input filter-colors__input" type="checkbox">
-                      <span class="filter-colors__input-custom filter-colors__input-custom--blue"></span>
-                      blue
-                    </label>
-                    <label class="filter-colors__label">
-                      <input class="filter__item-input filter-colors__input" type="checkbox">
-                      <span class="filter-colors__input-custom filter-colors__input-custom--red"></span>
-                      red
-                    </label>
-                    <label class="filter-colors__label">
-                      <input class="filter__item-input filter-colors__input" type="checkbox">
-                      <span class="filter-colors__input-custom filter-colors__input-custom--dark"></span>
-                      dark
-                    </label>
-                    <label class="filter-colors__label">
-                      <input class="filter__item-input filter-colors__input" type="checkbox">
-                      <span class="filter-colors__input-custom filter-colors__input-custom--brown"></span>
-                      brown
-                    </label>
+              </form>
+              <div class="furniture__body">
+                <div class="furniture__body-inner">
+                  <div class="product product--furniture">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/furniture/1.jpg" alt="product image">
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Spline chair</div>
+                      <div class="product__price">$309</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--light-grey"></div>
+                        <div class="product__colors-item product__colors-item--grey"></div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="furniture__filter-btns">
-                <button class="furniture__filter-btn btn" type="submit">apply</button>
-                <button class="furniture__filter-btn btn furniture__filter-btn--reset" type="reset">reset</button>
-              </div>
-            </form>
-            <div class="furniture__body">
-              <div class="furniture__body-inner">
-                <div class="product product--furniture">
-                  <div class="product__img">
-                    <a href="product.html">
-                      <img src="@img/furniture/1.jpg" alt="product image">
-                    </a>
+                  <div class="product product--furniture">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/furniture/2.jpg" alt="product image">
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Chaplin stool</div>
+                      <div class="product__price">$329</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--blue"></div>
+                        <div class="product__colors-item product__colors-item--light-grey"></div>
+                        <div class="product__colors-item product__colors-item--red"></div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="product__descr">
-                    <div class="product__name">Spline chair</div>
-                    <div class="product__price">$309</div>
-                    <div class="product__colors">
-                      <div class="product__colors-item product__colors-item--light-grey"></div>
-                      <div class="product__colors-item product__colors-item--grey"></div>
+                  <div class="product product--furniture">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/furniture/3.jpg" alt="product image">
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Zeno chair</div>
+                      <div class="product__price">$299</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--blue"></div>
+                        <div class="product__colors-item product__colors-item--dark"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product product--furniture">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/furniture/4.jpg" alt="product image">
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Ivan desk</div>
+                      <div class="product__price">$299</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--brown"></div>
+                        <div class="product__colors-item product__colors-item--dark"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product product--furniture">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/furniture/5.jpg" alt="product image">
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Juanda coffee table</div>
+                      <div class="product__price">$649</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--brown"></div>
+                        <div class="product__colors-item product__colors-item--grey"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product product--furniture">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/furniture/6.jpg" alt="product image">
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Keven side table</div>
+                      <div class="product__price">$799</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--light-brown"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product product--furniture">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/furniture/7.jpg" alt="product image">
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Cubo table</div>
+                      <div class="product__price">$599</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--grey"></div>
+                        <div class="product__colors-item product__colors-item--light-grey"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product product--furniture">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/furniture/8.jpg" alt="product image">
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Kigali shelvung unit</div>
+                      <div class="product__price">$329</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--light-brown"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product product--furniture">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/furniture/9.jpg" alt="product image">
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Canggu TV stand</div>
+                      <div class="product__price">$1099</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--light-grey"></div>
+                        <div class="product__colors-item product__colors-item--dark"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product product--furniture">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/furniture/10.jpg" alt="product image">
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Nest nesting tables</div>
+                      <div class="product__price">$899</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--grey"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product product--furniture">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/furniture/11.jpg" alt="product image">
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Pierre table</div>
+                      <div class="product__price">$799</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--grey"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product product--furniture">
+                    <div class="product__img">
+                      <a href="product.html">
+                        <img src="@img/furniture/12.jpg" alt="product image">
+                      </a>
+                    </div>
+                    <div class="product__descr">
+                      <div class="product__name">Spline table</div>
+                      <div class="product__price">$609</div>
+                      <div class="product__colors">
+                        <div class="product__colors-item product__colors-item--grey"></div>
+                        <div class="product__colors-item product__colors-item--light-grey"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="product product--furniture">
-                  <div class="product__img">
-                    <a href="product.html">
-                      <img src="@img/furniture/2.jpg" alt="product image">
-                    </a>
-                  </div>
-                  <div class="product__descr">
-                    <div class="product__name">Chaplin stool</div>
-                    <div class="product__price">$329</div>
-                    <div class="product__colors">
-                      <div class="product__colors-item product__colors-item--blue"></div>
-                      <div class="product__colors-item product__colors-item--light-grey"></div>
-                      <div class="product__colors-item product__colors-item--red"></div>
-                    </div>
-                  </div>
+                <div class="furniture__pagination">
+                  <a class="furniture__pagination-arrow-prev" href="#">
+                    <img src="@img/icons/pagination-prev.svg" alt="pagination arrow left">
+                  </a>
+                  <span class="furniture__pagination-current">1</span> of
+                  <span class="furniture__pagination-total">8</span>
+                  <a class="furniture__pagination-arrow-next" href="#">
+                    <img src="@img/icons/pagination-next.svg" alt="pagination arrow right">
+                  </a>
                 </div>
-                <div class="product product--furniture">
-                  <div class="product__img">
-                    <a href="product.html">
-                      <img src="@img/furniture/3.jpg" alt="product image">
-                    </a>
-                  </div>
-                  <div class="product__descr">
-                    <div class="product__name">Zeno chair</div>
-                    <div class="product__price">$299</div>
-                    <div class="product__colors">
-                      <div class="product__colors-item product__colors-item--blue"></div>
-                      <div class="product__colors-item product__colors-item--dark"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product--furniture">
-                  <div class="product__img">
-                    <a href="product.html">
-                      <img src="@img/furniture/4.jpg" alt="product image">
-                    </a>
-                  </div>
-                  <div class="product__descr">
-                    <div class="product__name">Ivan desk</div>
-                    <div class="product__price">$299</div>
-                    <div class="product__colors">
-                      <div class="product__colors-item product__colors-item--brown"></div>
-                      <div class="product__colors-item product__colors-item--dark"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product--furniture">
-                  <div class="product__img">
-                    <a href="product.html">
-                      <img src="@img/furniture/5.jpg" alt="product image">
-                    </a>
-                  </div>
-                  <div class="product__descr">
-                    <div class="product__name">Juanda coffee table</div>
-                    <div class="product__price">$649</div>
-                    <div class="product__colors">
-                      <div class="product__colors-item product__colors-item--brown"></div>
-                      <div class="product__colors-item product__colors-item--grey"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product--furniture">
-                  <div class="product__img">
-                    <a href="product.html">
-                      <img src="@img/furniture/6.jpg" alt="product image">
-                    </a>
-                  </div>
-                  <div class="product__descr">
-                    <div class="product__name">Keven side table</div>
-                    <div class="product__price">$799</div>
-                    <div class="product__colors">
-                      <div class="product__colors-item product__colors-item--light-brown"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product--furniture">
-                  <div class="product__img">
-                    <a href="product.html">
-                      <img src="@img/furniture/7.jpg" alt="product image">
-                    </a>
-                  </div>
-                  <div class="product__descr">
-                    <div class="product__name">Cubo table</div>
-                    <div class="product__price">$599</div>
-                    <div class="product__colors">
-                      <div class="product__colors-item product__colors-item--grey"></div>
-                      <div class="product__colors-item product__colors-item--light-grey"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product--furniture">
-                  <div class="product__img">
-                    <a href="product.html">
-                      <img src="@img/furniture/8.jpg" alt="product image">
-                    </a>
-                  </div>
-                  <div class="product__descr">
-                    <div class="product__name">Kigali shelvung unit</div>
-                    <div class="product__price">$329</div>
-                    <div class="product__colors">
-                      <div class="product__colors-item product__colors-item--light-brown"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product--furniture">
-                  <div class="product__img">
-                    <a href="product.html">
-                      <img src="@img/furniture/9.jpg" alt="product image">
-                    </a>
-                  </div>
-                  <div class="product__descr">
-                    <div class="product__name">Canggu TV stand</div>
-                    <div class="product__price">$1099</div>
-                    <div class="product__colors">
-                      <div class="product__colors-item product__colors-item--light-grey"></div>
-                      <div class="product__colors-item product__colors-item--dark"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product--furniture">
-                  <div class="product__img">
-                    <a href="product.html">
-                      <img src="@img/furniture/10.jpg" alt="product image">
-                    </a>
-                  </div>
-                  <div class="product__descr">
-                    <div class="product__name">Nest nesting tables</div>
-                    <div class="product__price">$899</div>
-                    <div class="product__colors">
-                      <div class="product__colors-item product__colors-item--grey"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product--furniture">
-                  <div class="product__img">
-                    <a href="product.html">
-                      <img src="@img/furniture/11.jpg" alt="product image">
-                    </a>
-                  </div>
-                  <div class="product__descr">
-                    <div class="product__name">Pierre table</div>
-                    <div class="product__price">$799</div>
-                    <div class="product__colors">
-                      <div class="product__colors-item product__colors-item--grey"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product product--furniture">
-                  <div class="product__img">
-                    <a href="product.html">
-                      <img src="@img/furniture/12.jpg" alt="product image">
-                    </a>
-                  </div>
-                  <div class="product__descr">
-                    <div class="product__name">Spline table</div>
-                    <div class="product__price">$609</div>
-                    <div class="product__colors">
-                      <div class="product__colors-item product__colors-item--grey"></div>
-                      <div class="product__colors-item product__colors-item--light-grey"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="furniture__pagination">
-                <a class="furniture__pagination-arrow-prev" href="#">
-                  <img src="@img/icons/pagination-prev.svg" alt="pagination arrow left">
-                </a>
-                <span class="furniture__pagination-current">1</span> of
-                <span class="furniture__pagination-total">8</span>
-                <a class="furniture__pagination-arrow-next" href="#">
-                  <img src="@img/icons/pagination-next.svg" alt="pagination arrow right">
-                </a>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
-    </main>
+          </section>
+        </div>
+      </main>
+    </div>
     @@include('html/footer.html', {})
     @@include('html/modals.html', {})
   </div>
