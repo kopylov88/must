@@ -377,13 +377,6 @@ const counter = function () {
 }
 counter();
 
-const links = document.querySelectorAll('a');
-links.forEach(function (link) {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-  })
-})
-
 const burger = document.querySelector('.burger');
 const menuLinks = document.querySelectorAll('.menu__link');
 const menu = document.querySelector('.menu');
