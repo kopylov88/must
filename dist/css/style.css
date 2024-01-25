@@ -604,7 +604,6 @@ body.no-scroll {
 .hero__text span {
   display: inline-block;
   overflow: hidden;
-  animation: 0.3s swift-up forwards;
 }
 
 .hero__title i,
@@ -612,7 +611,7 @@ body.no-scroll {
   font-style: normal;
   position: relative;
   top: 64px;
-  animation: 0.5s swift-up forwards;
+  animation: 0.7s "swift-up" forwards;
 }
 
 .hero__text i {
@@ -1110,6 +1109,8 @@ body.no-scroll {
   text-transform: uppercase;
   color: #303030;
   margin-bottom: 15px;
+  opacity: 0;
+  animation: "fade" 0.1s 0.3s forwards;
 }
 
 .hero__text {
@@ -1119,12 +1120,14 @@ body.no-scroll {
   /* 28/20 */
   max-width: 387px;
   margin-bottom: 75px;
+  opacity: 0;
+  animation: "fade" 0.1s 0.3s forwards;
 }
 
 .hero__btn {
   opacity: 0;
   transition: 0.3s;
-  animation: "fade" 1s 1.7s forwards ease-in;
+  animation: "fade" 1.5s 2s forwards;
 }
 
 @keyframes fade {

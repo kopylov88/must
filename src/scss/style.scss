@@ -231,6 +231,8 @@
     text-transform: uppercase;
     color: #303030;
     margin-bottom: 15px;
+    opacity: 0;
+    animation: 'fade' .1s .3s forwards;
   }
 
   &__text {
@@ -239,12 +241,14 @@
     line-height: 140%; /* 28/20 */
     max-width: 387px;
     margin-bottom: 75px;
+    opacity: 0;
+    animation: 'fade' .1s .3s forwards;
   }
 
   &__btn {
     opacity: 0;
     transition: .3s;
-    animation: 'fade' 1s 1.7s forwards ease-in;
+    animation: 'fade' 1.5s 2s forwards;
   }
 
   @keyframes fade {

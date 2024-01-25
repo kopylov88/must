@@ -417,14 +417,13 @@ body {
   span {
     display: inline-block;
     overflow: hidden;
-    animation: .3s swift-up forwards;
   }
 
   i {
     font-style: normal;
     position: relative;
     top: 64px;
-    animation: .5s swift-up forwards;
+    animation: .7s 'swift-up' forwards;
   }
 }
 

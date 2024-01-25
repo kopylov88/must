@@ -12,6 +12,14 @@ myFunctions.isWebp();
 myFunctions.isTouch();
 useDynamicAdapt();
 
+const links = document.querySelectorAll('a');
+
+links.forEach(function(el){
+  el.addEventListener('click',(e)=>{
+    e.preventDefault();
+  })
+})
+
 function homePage() {
   const favoritesSlider = new Swiper('.favorites__slider', {
     slidesPerView: 1,
@@ -378,7 +386,6 @@ const counter = function () {
 counter();
 
 const burger = document.querySelector('.burger');
-const menuLinks = document.querySelectorAll('.menu__link');
 const menu = document.querySelector('.menu');
 const body = document.body;
 
@@ -387,6 +394,11 @@ burger.addEventListener('click', function () {
   body.classList.toggle('no-scroll');
   burger.classList.toggle('active');
 });
+
+
+document.querySelector('.menu__link').classList.add('menu__link--active');
+
+const menuLinks = document.querySelectorAll('.menu__link');
 
 function UnderlineMenuLink() {
   menuLinks.forEach(function (item) {
@@ -400,13 +412,17 @@ function UnderlineMenuLink() {
 }
 UnderlineMenuLink();
 
-menuLinks.forEach(function (item) {
-  item.addEventListener('click', function (e) {
-    menu.classList.remove('active');
-    body.classList.remove('no-scroll');
-    burger.classList.remove('active');
+const mobileMenuElements = document.querySelectorAll('.mobile-menu-element');
+
+if(body.classList.contains('touch')) {
+  mobileMenuElements.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      menu.classList.remove('active');
+      body.classList.remove('no-scroll');
+      burger.classList.remove('active');
+    })
   })
-})
+}
 
 const searchBtnMobile = document.querySelector('.form-search__btn--mobile');
 const formSearch = document.querySelector('.form-search');
