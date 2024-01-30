@@ -14,8 +14,8 @@ useDynamicAdapt();
 
 const links = document.querySelectorAll('a');
 
-links.forEach(function(el){
-  el.addEventListener('click',(e)=>{
+links.forEach(function (el) {
+  el.addEventListener('click', (e) => {
     e.preventDefault();
   })
 })
@@ -414,7 +414,7 @@ UnderlineMenuLink();
 
 const mobileMenuElements = document.querySelectorAll('.mobile-menu-element');
 
-if(body.classList.contains('touch')) {
+if (body.classList.contains('touch')) {
   mobileMenuElements.forEach(function (item) {
     item.addEventListener('click', function (e) {
       menu.classList.remove('active');
