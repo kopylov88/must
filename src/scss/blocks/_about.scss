@@ -1,0 +1,55 @@
+.about {
+  padding: 60px 0;
+
+  &__title {
+    font-size: 60px;
+    line-height: 1.33;
+    text-align: left;
+  }
+
+  &__subtitle {
+    position: relative;
+    max-width: 822px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 1.2;
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      height: 2px;
+      background: #6D7278;
+    }
+  }
+
+  &__text {
+    margin-left: 285px;
+    margin-bottom: 50px;
+
+    p+p {
+      margin-top: 30px;
+    }
+  }
+
+  &__video {
+    height: 414px;
+    background-image: url('@img/about/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__video-btn {
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    background-image: url('@img/about/play_button.png');
+  }
+
+}

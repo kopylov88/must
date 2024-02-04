@@ -1,0 +1,291 @@
+.product-page {
+  padding: 80px 0;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 120px;
+  }
+
+  &__slider {
+    max-width: 590px;
+  }
+
+  &__slider-big {
+    margin-bottom: 40px;
+  }
+
+  &__slider-thumbs-item {
+    max-width: 156px;
+    cursor: pointer;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    font-family: 'Lato';
+    font-size: 32px;
+    line-height: 118.75%;
+    /* 38/32 */
+    color: #242424;
+    margin-bottom: 17px;
+  }
+
+  &__code {
+    font-family: 'Lato';
+    font-size: 12px;
+    line-height: 116.666667%;
+    /* 14/12 */
+    color: #9A9A9A;
+    margin-bottom: 34px;
+
+  }
+
+  &__colors {
+    gap: 16px;
+    margin-bottom: 100px;
+  }
+
+  &__colors-label {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    /* 24/20 */
+    color: #636363;
+    margin-bottom: 17px;
+  }
+
+  &__colors-items {
+    display: inline-flex;
+  }
+
+  &__colors-item {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  &__colors-item--dark {
+    background-color: #4B4A4D;
+  }
+
+  &__info-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottom-title {
+    font-family: 'Bebas Neue';
+    font-size: 64px;
+    line-height: 120.3125%;
+    /* 77/64 */
+    text-transform: uppercase;
+    color: #454545;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__bottom-subtitle {
+    letter-spacing: 0.04em;
+    text-align: center;
+    max-width: 985px;
+    margin: 0 auto 40px;
+  }
+
+  &__bottom-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 112px;
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__bottom-label {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 121.875%;
+    /* 39/32 */
+    color: #454545;
+  }
+
+  &__bottom-text {
+    letter-spacing: 0.04em;
+  }
+
+  &__bottom-img--left {
+    max-width: 590px;
+  }
+
+  &__bottom-img--right {
+    max-width: 521px;
+  }
+
+  &__features {
+    padding: 25px 0 34px;
+    border-top: 1px solid rgba(122, 122, 122, 0.4);
+  }
+
+  &__features-label {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    /* 24/20 */
+    color: #242424;
+    margin-bottom: 20px;
+  }
+
+  &__features-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 121.428571%;
+    /* 17/14 */
+    color: #333333;
+
+    &+.product-page__features-item {
+      margin-top: 10px;
+    }
+  }
+
+  &__dimensions {
+    padding: 25px 0 34px;
+    border-top: 1px solid rgba(122, 122, 122, 0.4);
+  }
+
+  &__dimensions-label {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    /* 24/20 */
+    color: #242424;
+    margin-bottom: 20px;
+  }
+
+  &__rating {
+    margin-bottom: 50px;
+  }
+
+  &__rating-label {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    /* 24/20 */
+    color: #242424;
+    margin-bottom: 10px;
+  }
+
+  &__reviews-label {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    /* 24/20 */
+    color: #242424;
+    margin-bottom: 30px;
+  }
+
+  &__reviews-items {
+    margin-bottom: 40px;
+  }
+
+  &__reviews-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .review-item {
+    display: flex;
+    align-items: flex-start;
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    &__head-author {
+      color: #242424;
+      font-weight: 500;
+    }
+
+    &__head-date {
+      color: #7A7A7A;
+    }
+
+    &__photo {
+      margin-right: 30px;
+      flex-shrink: 0;
+    }
+
+    &__photo-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+
+  .form-reviews {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+
+    &__label {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 125%;
+      /* 20/16 */
+      letter-spacing: 0.07em;
+      color: #000000;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__input {
+      display: block;
+      max-width: 300px;
+      width: 100%;
+      padding: 8px 15px;
+      border-bottom: 1px solid #B0B0B0;
+
+      &::placeholder {
+        font-size: 12px;
+        line-height: 125%;
+        /* 15/12 */
+        letter-spacing: 0.07em;
+        color: rgba(55, 55, 55, 0.45);
+      }
+    }
+
+    &__textarea {
+      display: block;
+      width: 100%;
+      min-height: 200px;
+      resize: none;
+      padding: 8px 15px;
+      border-bottom: 1px solid #B0B0B0;
+
+      &::placeholder {
+        font-size: 12px;
+        line-height: 125%;
+        /* 15/12 */
+        letter-spacing: 0.07em;
+        color: rgba(55, 55, 55, 0.45);
+      }
+    }
+
+  }
+}
