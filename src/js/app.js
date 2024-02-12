@@ -623,12 +623,12 @@ barba.init({
 
 barba.hooks.enter((data) => {
   UnderlineMenuLink();
+  window.scroll(0,0)
 });
 
-
-
-
-
+if (history.scrollRestoration) {
+  history.scrollRestoration = 'manual';
+}
 
 
 
